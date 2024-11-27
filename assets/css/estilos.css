@@ -1,0 +1,33 @@
+.main-section {
+    background-image: url('/assets/img/apiss.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    height: 100px;
+}
+
+.card img {
+    height: 250px;
+}
+ 
+.btn-primari{
+    background-color: palevioletred; /* Color de fondo verde */
+    color:black; /* Color del texto */
+    border: 0cap;
+   
+  }
+  
+.btn-danger {
+    background-color: #e20c65; /* Color de fondo verde */
+    color:black;
+    border: 0cap; /* Color del texto *//* Eliminar borde */
+  }
+
+  

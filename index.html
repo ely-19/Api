@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Apis</title>
+
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<script type="text/javascript">
+    // Función para inicializar el traductor de Google en la página
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', // El idioma de la página
+            includedLanguages: 'es', // Idiomas disponibles para traducir (en este caso, solo español)
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE // Estilo de la traducción
+        }, 'google_translate_element'); // El ID del contenedor donde se mostrará el traductor
+    }
+</script>
+
+<script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<body>
+    <div id="google_translate_element"></div>
+
+    <!-- Barra de navegación, utilizando clases de Bootstrap para el diseño -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <!-- Logo de la página con enlace al inicio -->
+            <a class="navbar-brand" href="index.html">Maquillaje M&E</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- Enlace al inicio de la página, con la clase "active" para indicar que es la página actual -->
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Enlace a la página de productos en venta -->
+                        <a class="nav-link" href="index.html">En venta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal con el título de la página -->
+    <main class="container-fluid main-section">
+        <h1 class="text-black">Encuentra tu nuevo Maquillaje & Perfumes</h1>
+    </main>
+
+    <!-- Contenedor principal para los productos -->
+    <div class="container mt-5">
+        <!-- Sección para los productos de maquillaje -->
+        <section id="maquillaje">
+            <h2>Maquillaje</h2>
+            <!-- Contenedor de los productos de maquillaje -->
+            <div class="row" id="maquillajeContainer"></div>
+            <button id="botonMostrarMaquillaje" class="btn-primari">Mostrar más</button>
+            <button id="botonOcultarMaquillaje" class="btn-danger" style="display: none;">Ocultar</button>
+        </section>
+
+        <!-- Sección para los productos de perfumes -->
+        <section id="perfumes" class="mb-5">
+            <h2>Perfumes</h2>
+            <!-- Contenedor de los productos de perfumes -->
+            <div class="row" id="perfumesContainer"></div>
+            <button id="botonMostrarPerfumes" class="btn-primari">Mostrar más</button>
+            <button id="botonOcultarPerfumes" class="btn-danger " style="display: none;">Ocultar</button>
+        </section>
+    </div>
+
+    <!-- Script para cargar iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+
+    <!-- Script para cargar la funcionalidad de Bootstrap (como los menús desplegables) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- Script personalizado para manejar la lógica y funcionalidad de la página -->
+    <script defer type="module" src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
